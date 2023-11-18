@@ -29,7 +29,7 @@ exports.forgotpassword = async (req, res, next) => {
           to: email,
           subject: 'Reset Password',
           text: 'Click the link below to reset your password:',
-          html: `<p>Click the link below to reset your password:</p><a href="http://16.171.60.25:3000/password/resetpassword/${id}">Reset password</a>`
+          html: `<p>Click the link below to reset your password:</p><a href="http://51.20.122.16:3000/password/resetpassword/${id}">Reset password</a>`
         };
         const info = await transporter.sendMail(mailOptions);
         console.log('Email sent successfully');
@@ -57,7 +57,7 @@ exports.forgotpassword = async (req, res, next) => {
                                     console.log('called')
                               });
                             </script>
-                            <form action="http://16.171.60.25:3000/password/updatepassword/${id}" id="form" method="get">
+                            <form action="http://51.20.122.16:3000/password/updatepassword/${id}" id="form" method="get">
                             <label for="password">Enter New Password</label><br>
                             <input type="password" name="password" id="password" required/><br><br>
                             <button type="submit" >Reset password</button><br><br>
