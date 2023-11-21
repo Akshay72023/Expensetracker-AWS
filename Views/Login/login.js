@@ -10,7 +10,7 @@ loginBtn.addEventListener('click',
             password
         }
         try{
-            const response= await axios.post('http://13.51.47.62:3000/user/login',obj)
+            const response= await axios.post('http://16.170.146.178:3000/user/login',obj)
             //console.log(response);
                 if(response.status === 201){
                     localStorage.setItem('token', response.data.token);
