@@ -7,7 +7,7 @@ forgotBtn.addEventListener('click',async function(e){
     }
     console.log(obj);
     //console.log(email);
-    const respone= await axios.post('http://16.171.113.247:3000/password/forgotpassword',obj);
+    const respone= await axios.post('http://16.170.157.123:3000/password/forgotpassword',obj);
     //console.log(respone);
     try{
         if(respone.status === 200){
