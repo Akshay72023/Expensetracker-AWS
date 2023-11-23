@@ -12,7 +12,7 @@ signupButton.addEventListener('click', async function(event) {
     };
 
     try {
-        const response = await axios.post('http://16.170.157.123:3000/user/signup', user);
+        const response = await axios.post('http://13.48.67.210:3000/user/signup', user);
         if (response.status === 201) {
             alert(response.data.message);
             window.location.href = '../Login/login.html';
